@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Green Star Packaging — Industrial Cargo Box Manufacturers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green-deep:   #1B4332;
+    --green-mid:    #2D6A4F;
+    --green-light:  #52B788;
+    --kraft:        #C8A97E;
+    --kraft-light:  #EDD9B9;
+    --gold:         #D4A853;
+    --charcoal:     #1C1C1E;
+    --offwhite:     #FAFAF8;
+    --muted:        #6B7280;
+    --border:       #E5E0D8;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--offwhite);
+    color: var(--charcoal);
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 5vw;
+    height: 68px;
+    background: rgba(27, 67, 50, 0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .nav-logo {
+    display: flex; align-items: center; gap: 10px;
+    text-decoration: none;
+  }
+
+  .nav-logo .star-icon {
+    width: 36px; height: 36px;
+    background: var(--gold);
+    clip-path: polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);
+    flex-shrink: 0;
+  }
+
+  .nav-logo span {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-size: 1.25rem;
+    letter-spacing: 0.04em;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .nav-links {
+    display: flex; align-items: center; gap: 2rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+
+  .nav-cta {
+    background: var(--gold);
+    color: var(--charcoal) !important;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-weight: 600 !important;
+    transition: background 0.2s !important;
+  }
+  .nav-cta:hover { background: #e6b85c !important; color: var(--charcoal) !important; }
+
+  .hamburger {
+    display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px;
+  }
+  .hamburger span { display: block; width: 24px; height: 2px; background: #fff; border-radius: 2px; transition: 0.3s; }
+
+  /* ── HERO ── */
+  #hero {
+    min-height: 100vh;
+    background: var(--green-deep);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center;
+    padding: 100px 5vw 60px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-bg-pattern {
+    position: absolute; inset: 0;
+    background-image:
+      repeating-linear-gradient(0deg, transparent, transparent 59px, rgba(255,255,255,0.03) 60px),
+      repeating-linear-gradient(90deg, transparent, transparent 59px, rgba(255,255,255,0.03) 60px);
+    pointer-events: none;
+  }
+
+  .hero-eyebrow {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--green-light);
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: clamp(3.5rem, 10vw, 8.5rem);
+    font-weight: 900;
+    line-height: 0.9;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: -0.01em;
+    max-width: 900px;
+  }
+
+  .hero-title .accent-line {
+    display: block;
+    color: var(--gold);
+    font-style: italic;
+  }
+
+  .hero-sub {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.6);
+    max-width: 520px;
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  .hero-actions {
+    margin-top: 2.5rem;
+    display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;
+  }
+
+  .btn-primary {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--gold);
+    color: var(--charcoal);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 14px 32px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.15s;
+    border: none; cursor: pointer;
+  }
+  .btn-primary:hover { background: #e6b85c; transform: translateY(-2px); }
+
+  .btn-outline {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: transparent;
+    color: #fff;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 14px 32px;
+    border-radius: 4px;
+    text-decoration: none;
+    border: 1.5px solid rgba(255,255,255,0.3);
+    transition: border-color 0.2s, background 0.2s;
+    cursor: pointer;
+  }
+  .btn-outline:hover { border-color: var(--gold); color: var(--gold); background: rgba(212,168,83,0.08); }
+
+  /* Animated box SVG in hero */
+  .hero-box-svg {
+    margin-top: 3.5rem;
+    opacity: 0.18;
+    width: min(320px, 70vw);
+    animation: floatBox 6s ease-in-out infinite;
+  }
+  @keyframes floatBox {
+    0%, 100% { transform: translateY(0) rotate(-2deg); }
+    50%       { transform: translateY(-18px) rotate(2deg); }
+  }
+
+  /* ── STATS BAR ── */
+  #stats {
+    background: var(--charcoal);
+    padding: 40px 5vw;
+    display: flex; justify-content: center; flex-wrap: wrap; gap: 0;
+  }
+
+  .stat-item {
+    flex: 1; min-width: 160px; max-width: 220px;
+    text-align: center;
+    padding: 16px 24px;
+    border-right: 1px solid rgba(255,255,255,0.08);
+  }
+  .stat-item:last-child { border-right: none; }
+
+  .stat-num {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: var(--gold);
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    margin-top: 4px;
+  }
+
+  /* ── ABOUT ── */
+  #about {
+    padding: 100px 5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5vw;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-eyebrow {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--green-mid);
+    margin-bottom: 0.75rem;
+  }
+
+  .section-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    font-weight: 900;
+    line-height: 1.05;
+    text-transform: uppercase;
+    color: var(--charcoal);
+    letter-spacing: -0.01em;
+  }
+
+  .section-title .green { color: var(--green-deep); }
+
+  .about-body {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--muted);
+    font-weight: 300;
+  }
+
+  .about-body strong { color: var(--charcoal); font-weight: 600; }
+
+  .about-features {
+    margin-top: 2rem;
+    display: flex; flex-direction: column; gap: 0.75rem;
+  }
+
+  .feature-row {
+    display: flex; align-items: center; gap: 12px;
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--charcoal);
+  }
+
+  .feature-row .dot {
+    width: 8px; height: 8px;
+    background: var(--green-light);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .about-visual {
+    background: var(--green-deep);
+    border-radius: 12px;
+    min-height: 380px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .about-visual::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(255,255,255,0.03) 20px, rgba(255,255,255,0.03) 21px);
+  }
+
+  .about-visual-inner {
+    position: relative; z-index: 1; text-align: center;
+  }
+
+  .about-visual svg { width: 160px; height: 160px; opacity: 0.9; }
+
+  .about-visual-caption {
+    margin-top: 1.5rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+  }
+
+  /* ── PRODUCTS ── */
+  #products {
+    background: var(--kraft-light);
+    padding: 100px 5vw;
+  }
+
+  .products-header {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 60px;
+  }
+
+  .products-header .section-title { color: var(--green-deep); }
+
+  .products-header p {
+    margin-top: 1rem;
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 28px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .product-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    transition: box-shadow 0.25s, transform 0.25s;
+    display: flex; flex-direction: column;
+  }
+  .product-card:hover { box-shadow: 0 12px 48px rgba(0,0,0,0.12); transform: translateY(-4px); }
+
+  .product-img-zone {
+    width: 100%; height: 240px;
+    background: linear-gradient(135deg, var(--green-deep) 0%, var(--green-mid) 100%);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .product-img-zone::after {
+    content: '';
+    position: absolute; inset: 0;
+    background: repeating-linear-gradient(45deg, transparent, transparent 14px, rgba(255,255,255,0.04) 14px, rgba(255,255,255,0.04) 15px);
+  }
+
+  .product-img-placeholder {
+    position: relative; z-index: 1;
+    display: flex; flex-direction: column; align-items: center; gap: 12px;
+  }
+
+  .product-img-placeholder svg { width: 72px; height: 72px; opacity: 0.7; }
+
+  .img-placeholder-text {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+  }
+
+  .product-badge {
+    position: absolute; top: 16px; left: 16px; z-index: 2;
+    background: var(--gold);
+    color: var(--charcoal);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 3px;
+  }
+
+  .product-body {
+    padding: 28px;
+    flex: 1;
+    display: flex; flex-direction: column;
+  }
+
+  .product-name {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--charcoal);
+    letter-spacing: 0.02em;
+  }
+
+  .product-tagline {
+    margin-top: 4px;
+    font-size: 0.85rem;
+    color: var(--green-mid);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .product-desc {
+    margin-top: 12px;
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: var(--muted);
+    flex: 1;
+  }
+
+  .product-specs {
+    margin-top: 18px;
+    display: flex; flex-direction: column; gap: 8px;
+    border-top: 1px solid var(--border);
+    padding-top: 18px;
+  }
+
+  .spec-row {
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 0.82rem;
+  }
+
+  .spec-label {
+    color: var(--muted);
+    font-weight: 400;
+  }
+
+  .spec-value {
+    font-weight: 600;
+    color: var(--charcoal);
+    font-size: 0.8rem;
+    background: var(--kraft-light);
+    padding: 2px 8px;
+    border-radius: 3px;
+  }
+
+  .product-cta {
+    margin-top: 22px;
+    display: block;
+    text-align: center;
+    background: var(--green-deep);
+    color: #fff;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  .product-cta:hover { background: var(--green-mid); }
+
+  /* ── WHY US ── */
+  #why {
+    padding: 100px 5vw;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .why-header {
+    text-align: center;
+    max-width: 560px;
+    margin: 0 auto 60px;
+  }
+
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 28px;
+  }
+
+  .why-card {
+    padding: 32px 28px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .why-card:hover { border-color: var(--green-light); box-shadow: 0 4px 24px rgba(82,183,136,0.12); }
+
+  .why-icon {
+    width: 48px; height: 48px;
+    background: var(--green-deep);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 20px;
+  }
+  .why-icon svg { width: 24px; height: 24px; fill: none; stroke: var(--gold); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+  .why-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--charcoal);
+    margin-bottom: 8px;
+  }
+
+  .why-text {
+    font-size: 0.88rem;
+    line-height: 1.7;
+    color: var(--muted);
+  }
+
+  /* ── PROCESS ── */
+  #process {
+    background: var(--green-deep);
+    padding: 100px 5vw;
+    text-align: center;
+  }
+
+  #process .section-eyebrow { color: var(--green-light); }
+  #process .section-title { color: #fff; }
+
+  .process-steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0;
+    margin-top: 56px;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  .process-steps::before {
+    content: '';
+    position: absolute;
+    top: 32px; left: 10%; right: 10%;
+    height: 1px;
+    background: rgba(255,255,255,0.12);
+  }
+
+  .step {
+    flex: 1; min-width: 160px; max-width: 200px;
+    padding: 0 16px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .step-num {
+    width: 64px; height: 64px;
+    background: rgba(255,255,255,0.08);
+    border: 1.5px solid rgba(255,255,255,0.2);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--gold);
+    margin: 0 auto 20px;
+  }
+
+  .step-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+
+  .step-desc {
+    font-size: 0.82rem;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.5);
+  }
+
+  /* ── CONTACT ── */
+  #contact {
+    padding: 100px 5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5vw;
+    align-items: start;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .contact-left .section-title { color: var(--green-deep); }
+
+  .contact-info {
+    margin-top: 2.5rem;
+    display: flex; flex-direction: column; gap: 1.25rem;
+  }
+
+  .contact-row {
+    display: flex; align-items: flex-start; gap: 14px;
+  }
+
+  .contact-icon {
+    width: 40px; height: 40px; flex-shrink: 0;
+    background: var(--green-deep);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .contact-icon svg { width: 18px; height: 18px; fill: none; stroke: var(--gold); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+  .contact-detail-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 2px;
+  }
+
+  .contact-detail-value {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--charcoal);
+  }
+
+  .contact-form {
+    background: #fff;
+    border-radius: 14px;
+    padding: 40px;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.06);
+    border: 1px solid var(--border);
+  }
+
+  .form-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--green-deep);
+    margin-bottom: 24px;
+    letter-spacing: 0.04em;
+  }
+
+  .form-group {
+    margin-bottom: 16px;
+  }
+
+  .form-group label {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1.5px solid var(--border);
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: var(--charcoal);
+    background: var(--offwhite);
+    transition: border-color 0.2s;
+    outline: none;
+    -webkit-appearance: none;
+  }
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus { border-color: var(--green-mid); background: #fff; }
+
+  .form-group textarea { resize: vertical; min-height: 100px; }
+
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+  .form-submit {
+    width: 100%;
+    margin-top: 8px;
+    padding: 14px;
+    background: var(--green-deep);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .form-submit:hover { background: var(--green-mid); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--charcoal);
+    padding: 48px 5vw 28px;
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .footer-brand .logo-row {
+    display: flex; align-items: center; gap: 10px;
+    text-decoration: none; margin-bottom: 16px;
+  }
+
+  .footer-brand .star-icon {
+    width: 32px; height: 32px;
+    background: var(--gold);
+    clip-path: polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);
+  }
+
+  .footer-brand .logo-text {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  .footer-brand p {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.4);
+    line-height: 1.7;
+    max-width: 280px;
+  }
+
+  .footer-col h4 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+    margin-bottom: 14px;
+  }
+
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+
+  .footer-col ul li a {
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-col ul li a:hover { color: var(--gold); }
+
+  .footer-bottom {
+    margin-top: 28px;
+    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.3);
+  }
+
+  .footer-bottom a { color: var(--gold); text-decoration: none; }
+
+  /* ── SCROLL REVEAL ── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ── MOBILE ── */
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+
+    .nav-links.open {
+      display: flex; flex-direction: column;
+      position: fixed; top: 68px; left: 0; right: 0;
+      background: var(--green-deep);
+      padding: 24px 5vw;
+      gap: 1.25rem;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    #about { grid-template-columns: 1fr; }
+    .about-visual { min-height: 220px; }
+
+    #contact { grid-template-columns: 1fr; }
+    .contact-form { padding: 28px 20px; }
+
+    .form-row { grid-template-columns: 1fr; }
+
+    .process-steps::before { display: none; }
+
+    .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .stat-item:last-child { border-bottom: none; }
+
+    .footer-top { flex-direction: column; }
+  }
+
+  @media (max-width: 480px) {
+    .hero-actions { flex-direction: column; align-items: stretch; }
+    .btn-primary, .btn-outline { text-align: center; justify-content: center; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-box-svg { animation: none; }
+    .reveal { opacity: 1; transform: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">
+    <div class="star-icon"></div>
+    <span>Green Star Packaging</span>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-pattern"></div>
+  <p class="hero-eyebrow">Cargo Box Manufacturers · Est. in India</p>
+  <h1 class="hero-title">
+    Built Strong.<br>
+    <span class="accent-line">Shipped Safe.</span>
+  </h1>
+  <p class="hero-sub">Industrial-grade cargo boxes engineered for durability. From factory floors to final destinations — we've got your goods covered.</p>
+  <div class="hero-actions">
+    <a href="#products" class="btn-primary">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      View Products
+    </a>
+    <a href="#contact" class="btn-outline">Request a Quote</a>
+  </div>
+
+  <!-- Floating box illustration -->
+  <svg class="hero-box-svg" viewBox="0 0 200 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Box body -->
+    <polygon points="100,20 180,60 180,140 100,180 20,140 20,60" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <!-- Top face -->
+    <polygon points="100,20 180,60 100,100 20,60" fill="rgba(255,255,255,0.12)" stroke="#ffffff" stroke-width="2"/>
+    <!-- Right face -->
+    <polygon points="180,60 180,140 100,180 100,100" fill="rgba(255,255,255,0.06)" stroke="#ffffff" stroke-width="1.5"/>
+    <!-- Left face -->
+    <polygon points="20,60 20,140 100,180 100,100" fill="rgba(255,255,255,0.04)" stroke="#ffffff" stroke-width="1.5"/>
+    <!-- Tape line horizontal -->
+    <line x1="20" y1="100" x2="180" y2="100" stroke="rgba(212,168,83,0.6)" stroke-width="3"/>
+    <!-- Tape line vertical -->
+    <line x1="100" y1="20" x2="100" y2="180" stroke="rgba(212,168,83,0.6)" stroke-width="3"/>
+    <!-- Star on box -->
+    <polygon points="100,50 104,62 118,62 107,70 111,82 100,74 89,82 93,70 82,62 96,62" fill="rgba(212,168,83,0.5)"/>
+  </svg>
+</section>
+
+<!-- STATS -->
+<div id="stats">
+  <div class="stat-item reveal">
+    <div class="stat-num">500+</div>
+    <div class="stat-label">Orders Fulfilled</div>
+  </div>
+  <div class="stat-item reveal">
+    <div class="stat-num">2</div>
+    <div class="stat-label">Box Variants</div>
+  </div>
+  <div class="stat-item reveal">
+    <div class="stat-num">100%</div>
+    <div class="stat-label">Quality Checked</div>
+  </div>
+  <div class="stat-item reveal">
+    <div class="stat-num">24h</div>
+    <div class="stat-label">Quote Response</div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div>
+    <p class="section-eyebrow reveal">Who We Are</p>
+    <h2 class="section-title reveal">Packaging Built <span class="green">for the Road Ahead</span></h2>
+    <p class="about-body reveal">
+      Green Star Packaging Company is a dedicated cargo box manufacturer committed to delivering <strong>reliable, industrial-grade packaging solutions</strong> for businesses across India. We believe great packaging isn't just a box — it's the last line of defence for your products.
+    </p>
+    <p class="about-body reveal">
+      Our manufacturing process prioritises <strong>structural integrity, consistent dimensions, and clean finish</strong> — so your cargo arrives exactly as it left.
+    </p>
+    <div class="about-features reveal">
+      <div class="feature-row"><div class="dot"></div>Heavy-duty corrugated construction</div>
+      <div class="feature-row"><div class="dot"></div>Custom sizing available on bulk orders</div>
+      <div class="feature-row"><div class="dot"></div>Suitable for industrial & commercial cargo</div>
+      <div class="feature-row"><div class="dot"></div>Competitive bulk pricing</div>
+    </div>
+  </div>
+  <div class="about-visual reveal">
+    <div class="about-visual-inner">
+      <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="80,12 140,44 140,116 80,148 20,116 20,44" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+        <polygon points="80,12 140,44 80,76 20,44" fill="rgba(82,183,136,0.15)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+        <polygon points="140,44 140,116 80,148 80,76" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+        <polygon points="20,44 20,116 80,148 80,76" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+        <line x1="20" y1="80" x2="140" y2="80" stroke="rgba(212,168,83,0.5)" stroke-width="2.5"/>
+        <line x1="80" y1="12" x2="80" y2="148" stroke="rgba(212,168,83,0.5)" stroke-width="2.5"/>
+        <polygon points="80,34 85,48 100,48 88,57 93,71 80,62 67,71 72,57 60,48 75,48" fill="rgba(212,168,83,0.8)"/>
+      </svg>
+      <p class="about-visual-caption">Green Star Packaging Co.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="products-header">
+    <p class="section-eyebrow reveal">Our Products</p>
+    <h2 class="section-title reveal">Two Boxes.<br>Every Cargo Need.</h2>
+    <p class="reveal">Engineered for heavy loads and long hauls. Simple, strong, and ready to ship.</p>
+  </div>
+  <div class="products-grid">
+
+    <!-- Product 1 -->
+    <div class="product-card reveal">
+      <div class="product-img-zone">
+        <div class="product-badge">Standard</div>
+        <div class="product-img-placeholder">
+          <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="36,6 62,20 62,52 36,66 10,52 10,20" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/>
+            <polygon points="36,6 62,20 36,34 10,20" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+            <polygon points="62,20 62,52 36,66 36,34" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+            <polygon points="10,20 10,52 36,66 36,34" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+            <line x1="10" y1="36" x2="62" y2="36" stroke="rgba(212,168,83,0.6)" stroke-width="2"/>
+            <line x1="36" y1="6" x2="36" y2="66" stroke="rgba(212,168,83,0.6)" stroke-width="2"/>
+          </svg>
+          <span class="img-placeholder-text">Photo Coming Soon</span>
+        </div>
+      </div>
+      <div class="product-body">
+        <div class="product-name">Standard Cargo Box</div>
+        <div class="product-tagline">Everyday Industrial Use</div>
+        <p class="product-desc">Our reliable workhorse. Designed for standard cargo transport needs with solid corrugated walls, consistent dimensions, and clean closure flaps. Ideal for warehousing, shipping, and storage across industries.</p>
+        <div class="product-specs">
+          <div class="spec-row">
+            <span class="spec-label">Material</span>
+            <span class="spec-value">Corrugated Cardboard</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Strength</span>
+            <span class="spec-value">Standard Grade</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Bulk Orders</span>
+            <span class="spec-value">Available</span>
+          </div>
+        </div>
+        <a href="#contact" class="product-cta">Enquire Now</a>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card reveal">
+      <div class="product-img-zone" style="background: linear-gradient(135deg, #2D4A1B 0%, #4A7A2D 100%);">
+        <div class="product-badge" style="background: var(--green-light); color: var(--charcoal);">Heavy Duty</div>
+        <div class="product-img-placeholder">
+          <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="36,4 64,19 64,53 36,68 8,53 8,19" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2"/>
+            <polygon points="36,4 64,19 36,34 8,19" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.5)" stroke-width="2"/>
+            <polygon points="64,19 64,53 36,68 36,34" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+            <polygon points="8,19 8,53 36,68 36,34" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+            <line x1="8" y1="36" x2="64" y2="36" stroke="rgba(212,168,83,0.8)" stroke-width="3"/>
+            <line x1="36" y1="4" x2="36" y2="68" stroke="rgba(212,168,83,0.8)" stroke-width="3"/>
+            <!-- Reinforcement lines -->
+            <line x1="20" y1="12" x2="52" y2="12" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+            <line x1="20" y1="60" x2="52" y2="60" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+          </svg>
+          <span class="img-placeholder-text">Photo Coming Soon</span>
+        </div>
+      </div>
+      <div class="product-body">
+        <div class="product-name">Heavy Duty Box</div>
+        <div class="product-tagline">High-Load &amp; Long-Haul</div>
+        <p class="product-desc">When the load is heavy and the journey is long, this box delivers. Reinforced walls and double-wall construction make it suitable for heavy machinery parts, dense goods, and demanding freight routes.</p>
+        <div class="product-specs">
+          <div class="spec-row">
+            <span class="spec-label">Material</span>
+            <span class="spec-value">Double-Wall Corrugated</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Strength</span>
+            <span class="spec-value">Heavy Grade</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">Bulk Orders</span>
+            <span class="spec-value">Available</span>
+          </div>
+        </div>
+        <a href="#contact" class="product-cta">Enquire Now</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why">
+  <div class="why-header">
+    <p class="section-eyebrow reveal">Why Choose Us</p>
+    <h2 class="section-title reveal">The <span class="green">Green Star</span> Advantage</h2>
+  </div>
+  <div class="why-grid">
+    <div class="why-card reveal">
+      <div class="why-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <div class="why-title">Unmatched Durability</div>
+      <p class="why-text">Every box undergoes quality checks before dispatch. We use only certified corrugated materials that meet industrial cargo standards.</p>
+    </div>
+    <div class="why-card reveal">
+      <div class="why-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      </div>
+      <div class="why-title">Fast Turnaround</div>
+      <p class="why-text">Quick production cycles mean you're never waiting long. Bulk orders are handled efficiently with clear lead times communicated upfront.</p>
+    </div>
+    <div class="why-card reveal">
+      <div class="why-icon">
+        <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+      </div>
+      <div class="why-title">Competitive Pricing</div>
+      <p class="why-text">Direct from manufacturer means no middleman markup. Volume discounts make us the cost-effective choice for businesses of all sizes.</p>
+    </div>
+    <div class="why-card reveal">
+      <div class="why-icon">
+        <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      </div>
+      <div class="why-title">Dedicated Support</div>
+      <p class="why-text">From first enquiry to final delivery, our team is available to help with specifications, sizing guidance, and order tracking.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <p class="section-eyebrow reveal">How It Works</p>
+  <h2 class="section-title reveal">From Enquiry to Delivery</h2>
+  <div class="process-steps">
+    <div class="step reveal">
+      <div class="step-num">01</div>
+      <div class="step-title">Send Enquiry</div>
+      <p class="step-desc">Fill the contact form or call us with your box type, quantity, and requirement.</p>
+    </div>
+    <div class="step reveal">
+      <div class="step-num">02</div>
+      <div class="step-title">Get Quote</div>
+      <p class="step-desc">We send a detailed quote within 24 hours with pricing and lead time.</p>
+    </div>
+    <div class="step reveal">
+      <div class="step-num">03</div>
+      <div class="step-title">Confirm Order</div>
+      <p class="step-desc">Approve the quote and confirm your order. We start production immediately.</p>
+    </div>
+    <div class="step reveal">
+      <div class="step-num">04</div>
+      <div class="step-title">Receive Delivery</div>
+      <p class="step-desc">Your quality-checked boxes are packed and dispatched to your location.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-left">
+    <p class="section-eyebrow reveal">Get In Touch</p>
+    <h2 class="section-title reveal">Let's Talk <span class="green">Packaging</span></h2>
+    <p class="about-body reveal">Ready to place an order or just need a quote? Reach out and we'll get back to you within 24 hours.</p>
+    <div class="contact-info">
+      <div class="contact-row reveal">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.36 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.83a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div>
+          <div class="contact-detail-label">Phone</div>
+          <div class="contact-detail-value">+91 XXXXX XXXXX</div>
+        </div>
+      </div>
+      <div class="contact-row reveal">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div>
+          <div class="contact-detail-label">Email</div>
+          <div class="contact-detail-value">info@greenstarpackaging.com</div>
+        </div>
+      </div>
+      <div class="contact-row reveal">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div>
+          <div class="contact-detail-label">Location</div>
+          <div class="contact-detail-value">India · Enquiries Welcome Nationwide</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-form reveal">
+    <div class="form-title">Request a Quote</div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" placeholder="Full name">
+      </div>
+      <div class="form-group">
+        <label>Company</label>
+        <input type="text" placeholder="Company name">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Phone</label>
+        <input type="tel" placeholder="+91 XXXXX XXXXX">
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="you@company.com">
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Box Type</label>
+      <select>
+        <option value="" disabled selected>Select a product</option>
+        <option>Standard Cargo Box</option>
+        <option>Heavy Duty Box</option>
+        <option>Both / Need Guidance</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Estimated Quantity</label>
+      <input type="text" placeholder="e.g. 500 units">
+    </div>
+    <div class="form-group">
+      <label>Message / Specifications</label>
+      <textarea placeholder="Describe your requirements — size, load, delivery location…"></textarea>
+    </div>
+    <button class="form-submit" onclick="handleSubmit(this)">Send Enquiry →</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="#hero" class="logo-row">
+        <div class="star-icon"></div>
+        <span class="logo-text">Green Star Packaging</span>
+      </a>
+      <p>Industrial cargo box manufacturers dedicated to quality, strength, and reliability. Serving businesses across India.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#products">Our Products</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Products</h4>
+      <ul>
+        <li><a href="#products">Standard Cargo Box</a></li>
+        <li><a href="#products">Heavy Duty Box</a></li>
+        <li><a href="#contact">Custom Orders</a></li>
+        <li><a href="#contact">Bulk Pricing</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+91XXXXXXXXXX">+91 XXXXX XXXXX</a></li>
+        <li><a href="mailto:info@greenstarpackaging.com">info@greenstarpackaging.com</a></li>
+        <li><a href="#contact">Get a Quote</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Green Star Packaging Company. All rights reserved.</p>
+    <p>Website by <a href="https://tsknexus.com" target="_blank">TSKNEXUS</a></p>
+  </div>
+</footer>
+
+<script>
+  // Mobile menu
+  function toggleMenu() {
+    const links = document.getElementById('navLinks');
+    links.classList.toggle('open');
+  }
+
+  // Close menu on link click
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('navLinks').classList.remove('open');
+    });
+  });
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 60);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => observer.observe(el));
+
+  // Form submit
+  function handleSubmit(btn) {
+    btn.textContent = 'Enquiry Sent ✓';
+    btn.style.background = 'var(--green-light)';
+    btn.style.color = 'var(--charcoal)';
+    btn.disabled = true;
+    setTimeout(() => {
+      btn.textContent = 'Send Enquiry →';
+      btn.style.background = '';
+      btn.style.color = '';
+      btn.disabled = false;
+    }, 3500);
+  }
+
+  // Animated counter on stats
+  function animateCount(el, target, suffix) {
+    let start = 0;
+    const duration = 1200;
+    const step = (timestamp) => {
+      if (!start) start = timestamp;
+      const progress = Math.min((timestamp - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const current = Math.floor(eased * target);
+      el.textContent = (current === target ? target : current) + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }
+
+  const statsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const nums = entry.target.querySelectorAll('.stat-num');
+        const data = [
+          { target: 500, suffix: '+' },
+          { target: 2,   suffix: '' },
+          { target: 100, suffix: '%' },
+          { target: 24,  suffix: 'h' },
+        ];
+        nums.forEach((el, i) => animateCount(el, data[i].target, data[i].suffix));
+        statsObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  statsObserver.observe(document.getElementById('stats'));
+</script>
+</body>
+</html>
