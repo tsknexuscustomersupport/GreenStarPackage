@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Greenstar Packaging Company — Corrugated &amp; Duplex Box Manufacturer, Thoothukudi</title>
+<meta name="description" content="Greenstar Packaging Company — ISO certified manufacturer of corrugated and duplex boxes in Thoothukudi, Tamil Nadu. Specialized packaging for seafood export and dry flower shipments.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F5F1E6;
+    --paper-2:#EEE7D6;
+    --ink:#211D17;
+    --ink-soft:#57503F;
+    --kraft:#B98A55;
+    --kraft-dark:#8C6239;
+    --teal:#1F4B4A;
+    --teal-deep:#153837;
+    --teal-light:#2E6E6A;
+    --rust:#B5502E;
+    --rust-deep:#8E3C21;
+    --cream-card:#FBF8F0;
+    --line:rgba(33,29,23,0.14);
+    --radius:2px;
+    --maxw:1140px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3,h4{font-family:'Zilla Slab',serif;margin:0;font-weight:600;letter-spacing:-0.01em;color:var(--ink);}
+  .mono{font-family:'JetBrains Mono',monospace;letter-spacing:0.04em;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+  section{position:relative;}
+  .eyebrow{font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:0.16em;font-size:11.5px;color:var(--rust-deep);font-weight:600;display:inline-flex;align-items:center;gap:10px;}
+  .eyebrow::before{content:"";width:20px;height:1px;background:var(--rust-deep);}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;font-family:'JetBrains Mono',monospace;font-size:12.5px;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;border-radius:var(--radius);cursor:pointer;border:1px solid transparent;transition:transform .18s ease, box-shadow .18s ease, background .18s ease, color .18s ease;white-space:nowrap;}
+  .btn-primary{background:var(--rust);color:#fff;}
+  .btn-primary:hover{background:var(--rust-deep);transform:translateY(-2px);box-shadow:0 10px 24px -10px rgba(142,60,33,0.6);}
+  .btn-outline{background:transparent;border-color:rgba(245,241,230,0.55);color:inherit;}
+  .btn-outline:hover{background:rgba(245,241,230,0.12);transform:translateY(-2px);}
+  .btn-dark-outline{background:transparent;border-color:var(--ink);color:var(--ink);}
+  .btn-dark-outline:hover{background:var(--ink);color:var(--paper);transform:translateY(-2px);}
+  .btn-teal{background:var(--teal);color:#fff;}
+  .btn-teal:hover{background:var(--teal-deep);transform:translateY(-2px);box-shadow:0 10px 24px -10px rgba(21,56,55,0.55);}
+
+  header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(245,241,230,0.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  .navbar{max-width:var(--maxw);margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;}
+  .logo{display:flex;align-items:baseline;gap:8px;}
+  .logo .mark{font-family:'Zilla Slab',serif;font-weight:700;font-size:21px;color:var(--teal-deep);}
+  .logo .mark span{color:var(--rust);}
+  .logo .sub{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-soft);}
+  nav.links{display:flex;gap:24px;align-items:center;}
+  nav.links a{font-size:12.5px;font-weight:600;color:var(--ink-soft);padding:4px 0;border-bottom:1px solid transparent;transition:color .15s ease, border-color .15s ease;}
+  nav.links a:hover{color:var(--ink);border-color:var(--rust);}
+  .nav-cta{display:flex;gap:10px;align-items:center;}
+  .nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:6px;}
+  .nav-toggle span{display:block;width:22px;height:2px;background:var(--ink);margin:5px 0;}
+  .mobile-panel{display:none;position:fixed;inset:0;z-index:99;background:var(--teal-deep);padding:96px 30px 30px;overflow-y:auto;}
+  .mobile-panel.open{display:block;}
+  .mobile-panel a{display:block;color:var(--paper);font-family:'Zilla Slab',serif;font-size:23px;padding:12px 0;border-bottom:1px solid rgba(245,241,230,0.15);}
+
+  .hero{padding:150px 0 70px;background:radial-gradient(circle at 85% 8%, rgba(181,80,46,0.12), transparent 45%), var(--teal-deep);color:var(--paper);overflow:hidden;position:relative;}
+  .hero .wrap{position:relative;z-index:2;}
+  .flute-bg{position:absolute;inset:0;opacity:0.16;z-index:1;pointer-events:none;}
+  .hero-grid{display:grid;grid-template-columns:1.15fr 0.85fr;gap:48px;align-items:end;}
+  .stamp{position:absolute;top:140px;right:24px;width:112px;height:112px;border:1.5px solid rgba(245,241,230,0.55);border-radius:50%;display:flex;align-items:center;justify-content:center;transform:rotate(-14deg);font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:0.08em;text-transform:uppercase;color:rgba(245,241,230,0.75);text-align:center;z-index:3;}
+  .stamp-inner{width:84px;padding:6px;border:1px dashed rgba(245,241,230,0.4);border-radius:50%;line-height:1.5;}
+  .hero h1{font-size:clamp(30px,4.6vw,52px);line-height:1.06;color:var(--paper);max-width:780px;}
+  .hero h1 em{color:var(--kraft);font-style:normal;}
+  .hero p.lead{margin-top:18px;max-width:540px;font-size:16px;color:rgba(245,241,230,0.82);}
+  .hero-cta{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap;}
+  .hero-trust{display:flex;flex-direction:column;gap:0;border-left:1px solid rgba(245,241,230,0.25);padding-left:24px;}
+  .trust-row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(245,241,230,0.15);font-family:'JetBrains Mono',monospace;font-size:12px;}
+  .trust-row:first-child{padding-top:0;}
+  .trust-row span:first-child{color:rgba(245,241,230,0.55);text-transform:uppercase;letter-spacing:0.06em;}
+  .trust-row span:last-child{color:var(--paper);font-weight:600;text-align:right;}
+
+  .flute-divider{height:22px;width:100%;overflow:hidden;line-height:0;}
+  .flute-divider svg{width:100%;height:100%;display:block;}
+
+  .sec-head{max-width:620px;margin-bottom:36px;}
+  .sec-head h2{font-size:clamp(25px,3vw,36px);margin-top:12px;line-height:1.1;}
+  .sec-head p{margin-top:12px;color:var(--ink-soft);font-size:15px;}
+
+  section.on-paper{background:var(--paper);padding:72px 0;}
+  section.on-paper2{background:var(--paper-2);padding:72px 0;}
+  section.on-teal{background:var(--teal-deep);color:var(--paper);padding:72px 0;}
+  section.on-teal .ink-soft{color:rgba(245,241,230,0.7);}
+
+  .stat-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);margin-top:32px;border:1px solid var(--line);}
+  .stat-box{background:var(--paper);padding:18px 16px;}
+  .stat-box .num{font-family:'Zilla Slab',serif;font-size:27px;font-weight:700;color:var(--teal-deep);}
+  .stat-box .lab{font-family:'JetBrains Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:0.06em;color:var(--ink-soft);margin-top:4px;}
+
+  /* ---------- PRODUCT TEASER (2 cards) ---------- */
+  .cat-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);}
+  .cat-card-lg{background:var(--cream-card);padding:32px 28px;min-height:180px;display:flex;flex-direction:column;justify-content:space-between;transition:background .15s ease;}
+  .cat-card-lg:hover{background:#fff;}
+  .cat-card-lg .n{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--rust);margin-bottom:12px;}
+  .cat-card-lg h4{font-size:20px;line-height:1.25;}
+  .cat-card-lg p{font-size:13.5px;color:var(--ink-soft);margin-top:10px;}
+
+  .why-list{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;margin-top:8px;}
+  .why-item{display:flex;gap:14px;padding:17px 4px;border-bottom:1px solid var(--line);}
+  .why-item .ix{font-family:'JetBrains Mono',monospace;color:var(--rust);font-size:12.5px;flex:0 0 24px;}
+  .why-item p{margin:0;font-size:14px;color:var(--ink-soft);}
+  .why-item strong{color:var(--ink);display:block;font-family:'Zilla Slab',serif;font-size:15.5px;font-weight:600;margin-bottom:3px;}
+
+  .process-row{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:8px;}
+  .process-step{border-top:2px solid var(--kraft);padding-top:14px;}
+  .process-step .pn{font-family:'JetBrains Mono',monospace;font-size:23px;color:var(--kraft-dark);font-weight:600;}
+  .process-step h4{margin-top:8px;font-size:15px;}
+
+  /* ---------- ABOUT (video background) ---------- */
+  .about-section{padding:0;overflow:hidden;position:relative;min-height:640px;display:flex;align-items:center;color:var(--paper);}
+  .about-video-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;}
+  .about-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg, rgba(21,56,55,0.88) 0%, rgba(21,56,55,0.82) 45%, rgba(21,56,55,0.94) 100%);}
+  .about-content{position:relative;z-index:2;padding:80px 0;width:100%;}
+  .about-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:50px;align-items:start;}
+  .about-grid p{color:rgba(245,241,230,0.82);margin:0 0 14px;font-size:14.5px;}
+  .motto-box{margin-top:22px;padding:18px 20px;border-left:2px solid var(--kraft);background:rgba(245,241,230,0.05);}
+  .motto-box p{margin:0;font-family:'Zilla Slab',serif;font-style:italic;font-size:18px;color:var(--paper);}
+  .sound-toggle{
+    position:relative;z-index:2;display:inline-flex;align-items:center;gap:8px;
+    margin-top:18px;padding:10px 16px;border:1px solid rgba(245,241,230,0.4);
+    border-radius:30px;font-family:'JetBrains Mono',monospace;font-size:11.5px;
+    background:rgba(245,241,230,0.08);cursor:pointer;color:var(--paper);
+  }
+  .sound-toggle:hover{background:rgba(245,241,230,0.16);}
+  .vm-stack{display:grid;gap:1px;background:rgba(245,241,230,0.15);border:1px solid rgba(245,241,230,0.15);}
+  .vm-item{background:rgba(21,56,55,0.6);padding:18px 20px;}
+  .vm-item .eyebrow{color:var(--kraft);}
+  .vm-item p{margin-top:6px;color:rgba(245,241,230,0.82);font-size:14px;}
+  .about-stats{background:rgba(245,241,230,0.15);border-color:rgba(245,241,230,0.15);margin-top:1px;}
+  .about-stats .stat-box{background:var(--teal-deep);}
+  .about-stats .num{color:var(--kraft);}
+  .about-stats .lab{color:rgba(245,241,230,0.55);}
+
+  /* ---------- BUILDER ---------- */
+  .builder-grid{display:grid;grid-template-columns:0.75fr 1.25fr;gap:40px;align-items:start;}
+  .builder-panel{background:rgba(245,241,230,0.05);border:1px solid rgba(245,241,230,0.15);padding:26px 24px;}
+  .field{margin-bottom:16px;}
+  .field label{display:block;font-family:'JetBrains Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:6px;color:var(--ink-soft);}
+  .field input, .field select, .field textarea{width:100%;padding:11px 13px;border:1px solid var(--line);background:#fff;font-family:'Inter',sans-serif;font-size:14px;color:var(--ink);border-radius:var(--radius);}
+  .field textarea{resize:vertical;min-height:84px;}
+  .builder-panel .field input, .builder-panel .field select{background:rgba(245,241,230,0.06);border-color:rgba(245,241,230,0.22);color:var(--paper);}
+  .builder-panel #bx-download:disabled{opacity:0.4;cursor:not-allowed;}
+  .builder-canvas-wrap{background:rgba(245,241,230,0.05);border:1px solid rgba(245,241,230,0.15);padding:22px;display:flex;flex-direction:column;align-items:center;}
+  #bx-canvas{max-width:100%;height:auto;background:transparent;}
+
+  /* ---------- INDUSTRIES ---------- */
+  .flagship-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:1px;}
+  .flagship-card{background:var(--teal-deep);color:var(--paper);padding:38px 32px;position:relative;overflow:hidden;}
+  .flagship-card.alt{background:var(--rust-deep);}
+  .flagship-card .tag{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;opacity:0.65;}
+  .flagship-card h3{color:var(--paper);font-size:23px;margin-top:10px;}
+  .flagship-card p{color:rgba(245,241,230,0.82);margin-top:10px;font-size:13.5px;max-width:400px;}
+  .industry-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-top:none;}
+  .industry-card{background:var(--cream-card);padding:20px 20px;}
+  .industry-card h4{font-size:14.5px;}
+  .industry-card p{font-size:12.5px;color:var(--ink-soft);margin-top:6px;}
+
+  /* ---------- PRODUCTS FULL (2 items) ---------- */
+  .product-full{border:1px solid var(--line);background:var(--cream-card);padding:30px 28px;margin-bottom:1px;display:grid;grid-template-columns:0.5fr 1fr 0.8fr;gap:26px;align-items:start;}
+  .product-full .pf-index{font-family:'JetBrains Mono',monospace;color:var(--rust);font-size:12.5px;}
+  .product-full h3{font-size:20px;margin-top:6px;line-height:1.15;}
+  .product-full .tagline{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--teal-deep);text-transform:uppercase;letter-spacing:0.04em;margin-top:6px;}
+  .product-full .desc{color:var(--ink-soft);font-size:13.5px;margin-top:10px;}
+  .product-full .spec-list{margin:14px 0 0;padding:0;list-style:none;font-size:13px;color:var(--ink-soft);}
+  .product-full .spec-list li{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid var(--line);}
+  .product-full .spec-list li span:first-child{font-family:'JetBrains Mono',monospace;font-size:11px;text-transform:uppercase;color:var(--ink-soft);opacity:0.75;}
+  .product-full .spec-list li span:last-child{color:var(--ink);font-weight:500;text-align:right;}
+  .product-full .best{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--teal-deep);background:rgba(31,75,74,0.08);display:inline-block;padding:8px 12px;margin-top:14px;border-left:2px solid var(--teal);}
+  .product-full .pf-cta{display:flex;flex-direction:column;gap:10px;align-items:flex-start;}
+
+  /* ---------- CAPABILITIES + QUALITY ---------- */
+  .cap-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start;}
+  .flow-list{list-style:none;margin:0;padding:0;counter-reset:flow;}
+  .flow-list li{counter-increment:flow;display:flex;gap:16px;padding:15px 0;border-bottom:1px solid rgba(245,241,230,0.15);}
+  .flow-list li::before{content:counter(flow,decimal-leading-zero);font-family:'JetBrains Mono',monospace;color:var(--kraft);font-weight:600;font-size:13px;flex:0 0 28px;}
+  .flow-list li p{margin:0;color:rgba(245,241,230,0.78);font-size:13.5px;}
+  .cap-stats{margin-top:1px;background:rgba(245,241,230,0.15);border-color:rgba(245,241,230,0.15);}
+  .cap-stats .stat-box{background:var(--teal-deep);}
+  .cap-stats .num{color:var(--kraft);}
+  .cap-stats .lab{color:rgba(245,241,230,0.55);}
+  .seal{width:130px;height:130px;border-radius:50%;border:1.5px solid var(--kraft);display:flex;align-items:center;justify-content:center;text-align:center;margin:0 0 18px;font-family:'JetBrains Mono',monospace;font-size:9.5px;text-transform:uppercase;letter-spacing:0.06em;color:var(--paper);}
+  .seal-inner{width:98px;padding:8px;border:1px dashed var(--kraft);border-radius:50%;line-height:1.6;}
+  .qc-list{padding-left:16px;margin:10px 0 0;color:rgba(245,241,230,0.78);font-size:13.5px;line-height:1.8;}
+
+  /* ---------- FACTORY NOTE ---------- */
+  .factory-note{max-width:620px;margin:36px auto 0;padding:16px 20px;border:1px dashed var(--line);background:var(--cream-card);font-size:13px;color:var(--ink-soft);text-align:center;font-family:'JetBrains Mono',monospace;}
+
+  /* ---------- CONTACT ---------- */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);}
+  .contact-col{background:var(--paper);padding:36px 32px;}
+  .contact-col.dark{background:var(--teal-deep);color:var(--paper);}
+  .contact-direct{display:flex;flex-direction:column;gap:20px;margin-top:24px;}
+  .cd-row{border-top:1px solid rgba(245,241,230,0.18);padding-top:14px;}
+  .cd-row .lab{font-family:'JetBrains Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:0.08em;color:rgba(245,241,230,0.55);}
+  .cd-row .val{margin-top:6px;font-size:15px;font-family:'Zilla Slab',serif;}
+  .map-embed{margin-top:24px;border:1px solid rgba(245,241,230,0.25);overflow:hidden;}
+  .map-embed iframe{width:100%;height:200px;border:0;filter:grayscale(0.2);}
+
+  footer{background:var(--ink);color:rgba(245,241,230,0.75);padding:52px 0 24px;}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:36px;}
+  .foot-grid h5{font-family:'JetBrains Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:0.08em;color:rgba(245,241,230,0.5);margin-bottom:14px;}
+  .foot-grid a, .foot-grid p{display:block;font-size:13px;margin-bottom:9px;color:rgba(245,241,230,0.78);}
+  .foot-grid a:hover{color:#fff;}
+  .foot-logo{font-family:'Zilla Slab',serif;font-size:20px;font-weight:700;color:#fff;}
+  .foot-logo span{color:var(--kraft);}
+  .foot-bottom{border-top:1px solid rgba(245,241,230,0.12);margin-top:40px;padding-top:20px;display:flex;justify-content:space-between;font-size:11.5px;color:rgba(245,241,230,0.45);font-family:'JetBrains Mono',monospace;flex-wrap:wrap;gap:8px;}
+  .foot-bottom a{color:rgba(245,241,230,0.6);}
+  .foot-bottom a:hover{color:var(--kraft);}
+
+  .wa-float{position:fixed;bottom:22px;right:22px;z-index:90;background:var(--teal);color:#fff;padding:13px 18px;border-radius:40px;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;display:flex;align-items:center;gap:8px;box-shadow:0 14px 30px -12px rgba(21,56,55,0.55);transition:transform .18s ease;}
+  .wa-float:hover{transform:translateY(-3px);background:var(--teal-deep);}
+
+  .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in{opacity:1;transform:none;}
+
+  @media (max-width:980px){
+    nav.links, .nav-cta .btn-teal{display:none;}
+    .nav-toggle{display:block;}
+    .hero-grid{grid-template-columns:1fr;gap:30px;}
+    .hero-trust{border-left:none;padding-left:0;border-top:1px solid rgba(245,241,230,0.25);padding-top:18px;}
+    .stat-strip{grid-template-columns:repeat(2,1fr);}
+    .cat-grid-2{grid-template-columns:1fr;}
+    .why-list{grid-template-columns:1fr;}
+    .process-row{grid-template-columns:repeat(2,1fr);}
+    .about-grid{grid-template-columns:1fr;gap:30px;}
+    .flagship-grid{grid-template-columns:1fr;}
+    .industry-grid{grid-template-columns:repeat(2,1fr);}
+    .product-full{grid-template-columns:1fr;}
+    .builder-grid{grid-template-columns:1fr;}
+    .cap-grid{grid-template-columns:1fr;gap:36px;}
+    .contact-grid{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+    .stamp{display:none;}
+    .about-section{min-height:auto;}
+  }
+  @media (max-width:560px){
+    .cat-grid-2{grid-template-columns:1fr;}
+    .industry-grid{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr;}
+    section.on-paper, section.on-paper2, section.on-teal{padding:52px 0;}
+    .about-content{padding:56px 0;}
+    .hero{padding:128px 0 48px;}
+    .hero h1{font-size:28px;}
+    .navbar{padding:12px 16px;}
+    .wrap{padding:0 18px;}
+    .stat-strip{grid-template-columns:1fr 1fr;}
+    .product-full{padding:22px 20px;}
+    .contact-col{padding:28px 22px;}
+    .wa-float{padding:11px 15px;font-size:11px;bottom:16px;right:16px;}
+    .foot-bottom{flex-direction:column;text-align:center;}
+  }
+  @media (max-width:400px){
+    .stat-strip{grid-template-columns:1fr;}
+    .process-row{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <a href="#home" class="logo">
+      <span class="mark">Green<span>star</span></span>
+      <span class="sub">Packaging&nbsp;Co.</span>
+    </a>
+    <nav class="links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#builder">Custom Box</a>
+      <a href="#industries">Industries</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-teal" href="#contact">Request a Quote</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-panel" id="mobilePanel">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#products">Products</a>
+  <a href="#builder">Custom Box</a>
+  <a href="#industries">Industries</a>
+  <a href="#capabilities">Capabilities</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- ================= HOME / HERO ================= -->
+<section id="home" class="hero">
+  <svg class="flute-bg" viewBox="0 0 1200 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 460 Q 30 430 60 460 T 120 460 T 180 460 T 240 460 T 300 460 T 360 460 T 420 460 T 480 460 T 540 460 T 600 460 T 660 460 T 720 460 T 780 460 T 840 460 T 900 460 T 960 460 T 1020 460 T 1080 460 T 1140 460 T 1200 460" stroke="#F5F1E6" stroke-width="2" fill="none"/>
+    <path d="M0 500 Q 30 470 60 500 T 120 500 T 180 500 T 240 500 T 300 500 T 360 500 T 420 500 T 480 500 T 540 500 T 600 500 T 660 500 T 720 500 T 780 500 T 840 500 T 900 500 T 960 500 T 1020 500 T 1080 500 T 1140 500 T 1200 500" stroke="#F5F1E6" stroke-width="2" fill="none"/>
+  </svg>
+  <div class="stamp"><div class="stamp-inner">ISO Certified<br>Est. 2014<br>Thoothukudi, TN</div></div>
+  <div class="wrap">
+    <span class="eyebrow" style="color:var(--kraft);">Corrugated &amp; Duplex Box Manufacturer · Thoothukudi</span>
+    <div class="hero-grid" style="margin-top:18px;">
+      <div>
+        <h1>Protecting what matters, <em>from Thoothukudi to the world.</em></h1>
+        <p class="lead">Greenstar Packaging Company manufactures corrugated and duplex boxes engineered for seafood exporters and dry flower producers — built for moisture resistance, freshness protection and export-ready durability.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Request a Quote</a>
+          <a href="https://wa.me/919843097090" target="_blank" class="btn btn-outline">WhatsApp Us</a>
+        </div>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-row"><span>Established</span><span>2014</span></div>
+        <div class="trust-row"><span>Plant</span><span>Semi-Automatic Facility</span></div>
+        <div class="trust-row"><span>Location</span><span>Valasamuthram, Thoothukudi</span></div>
+        <div class="trust-row"><span>Certification</span><span>ISO Certified</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="flute-divider"><svg viewBox="0 0 1200 26" preserveAspectRatio="none"><path d="M0 13 Q15 0 30 13 T60 13 T90 13 T120 13 T150 13 T180 13 T210 13 T240 13 T270 13 T300 13 T330 13 T360 13 T390 13 T420 13 T450 13 T480 13 T510 13 T540 13 T570 13 T600 13 T630 13 T660 13 T690 13 T720 13 T750 13 T780 13 T810 13 T840 13 T870 13 T900 13 T930 13 T960 13 T990 13 T1020 13 T1050 13 T1080 13 T1110 13 T1140 13 T1170 13 T1200 13" fill="none" stroke="#B98A55" stroke-width="6"/></svg></div>
+
+<!-- ================= PRODUCT TEASER (2 only) ================= -->
+<section class="on-paper2 reveal">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">What We Manufacture</span>
+      <h2>Two board systems. Every packaging need.</h2>
+      <p>We keep a focused range — corrugated for strength and export protection, duplex for retail finish and branding — both fully custom to your dimensions.</p>
+    </div>
+    <div class="cat-grid-2">
+      <div class="cat-card-lg"><div><div class="n">01</div><h4>Corrugated Boxes</h4></div><p>Multi-ply fluted board built for seafood export, dry flower shipments and heavy industrial transit.</p></div>
+      <div class="cat-card-lg"><div><div class="n">02</div><h4>Duplex Boxes</h4></div><p>Smooth, printable coated board for retail-ready, brand-forward cartons.</p></div>
+    </div>
+    <div style="margin-top:24px;"><a href="#products" class="btn btn-dark-outline">View Product Details →</a></div>
+  </div>
+</section>
+
+<!-- ================= WHY CHOOSE US ================= -->
+<section class="on-paper reveal">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Why Choose Us</span>
+      <h2>Built for exporters who can't afford a damaged shipment.</h2>
+    </div>
+    <div class="why-list">
+      <div class="why-item"><span class="ix">01</span><p><strong>12+ years of expertise</strong>Corrugated packaging experience rooted in export trade.</p></div>
+      <div class="why-item"><span class="ix">02</span><p><strong>Seafood &amp; dry flower specialists</strong>Purpose-built packaging for our founding export categories.</p></div>
+      <div class="why-item"><span class="ix">03</span><p><strong>Custom ply &amp; GSM configuration</strong>Every order gets a specification matched to it.</p></div>
+      <div class="why-item"><span class="ix">04</span><p><strong>Quality checks at every stage</strong>Incoming material, in-process and pre-dispatch verification.</p></div>
+    </div>
+    <div class="process-row" style="margin-top:44px;">
+      <div class="process-step"><div class="pn">01</div><h4>Receive Requirements</h4></div>
+      <div class="process-step"><div class="pn">02</div><h4>Ply / Design Recommendation</h4></div>
+      <div class="process-step"><div class="pn">03</div><h4>Manufacturing &amp; QC</h4></div>
+      <div class="process-step"><div class="pn">04</div><h4>Timely Dispatch</h4></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT (video background) ================= -->
+<section id="about" class="about-section reveal">
+  <video class="about-video-bg" id="about-video" autoplay muted loop playsinline preload="metadata">
+    <source src="greenstar-factory-tour.mp4" type="video/mp4">
+  </video>
+  <div class="about-overlay"></div>
+  <div class="about-content">
+    <div class="wrap">
+      <div class="sec-head" style="margin-bottom:30px;">
+        <span class="eyebrow" style="color:var(--kraft);">About Us</span>
+        <h2 style="color:var(--paper);">Founded where the seafood export trade shaped everything we build.</h2>
+      </div>
+      <div class="about-grid">
+        <div>
+          <p>Greenstar Packaging Company was founded in 2014 in Thoothukudi — a region shaped by its seafood export trade. That proximity shaped our specialization from day one: packaging that protects moisture-sensitive, high-value cargo through long-distance transit.</p>
+          <p>Watch the video above to hear the story directly from our team — how a semi-automatic plant in Valasamuthram grew into a specialist in seafood and dry flower export packaging.</p>
+          <button class="sound-toggle" id="soundToggle">🔇 Turn on sound to hear our story</button>
+          <div class="motto-box"><p>"Protecting What Matters, From Thoothukudi to the World."</p></div>
+        </div>
+        <div>
+          <div class="vm-stack">
+            <div class="vm-item"><div class="eyebrow">Vision</div><p>To be the packaging partner Thoothukudi's exporters rely on for durability, freshness protection and dependable delivery.</p></div>
+            <div class="vm-item"><div class="eyebrow">Mission</div><p>To manufacture packaging engineered for each client's product and export requirement, backed by consistent quality and on-time dispatch.</p></div>
+            <div class="vm-item"><div class="eyebrow">Commitment</div><p>Recyclable kraft board, responsible sourcing, and quality checks at every production stage — from raw material to pre-dispatch.</p></div>
+          </div>
+          <div class="stat-strip about-stats">
+            <div class="stat-box"><div class="num">600T</div><div class="lab">Annual Capacity</div></div>
+            <div class="stat-box"><div class="num">40+</div><div class="lab">Team Members</div></div>
+            <div class="stat-box"><div class="num">2014</div><div class="lab">Established</div></div>
+            <div class="stat-box"><div class="num">ISO</div><div class="lab">Certified Process</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRODUCTS (full, 2 only) ================= -->
+<section id="products" class="on-paper reveal">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Products</span>
+      <h2>Every carton, engineered for what's going inside it.</h2>
+      <p>Ply, GSM and finish are configured per order. Get a quote directly on either line below.</p>
+    </div>
+
+    <div class="product-full">
+      <div><div class="pf-index">01 / 02</div></div>
+      <div>
+        <h3>Corrugated Boxes</h3>
+        <div class="tagline">Fluted board · export &amp; industrial grade</div>
+        <p class="desc">Our core product — multi-ply fluted board engineered for moisture resistance and stacking strength. Built for seafood export, dry flower shipments, industrial goods and heavy e-commerce transit.</p>
+        <ul class="spec-list">
+          <li><span>Construction</span><span>3-ply / 5-ply / 7-ply</span></li>
+          <li><span>Paper grade</span><span>120–200 GSM Kraft</span></li>
+          <li><span>Load rating</span><span>Standard to Heavy Duty</span></li>
+          <li><span>Finish</span><span>Flexo print, plain, or laminated</span></li>
+        </ul>
+        <div class="best">Best for: Seafood &amp; frozen export, dry flowers, industrial goods, e-commerce</div>
+      </div>
+      <div class="pf-cta"><a class="btn btn-teal" target="_blank" href="https://wa.me/919843097090?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20Corrugated%20Boxes.">Get Quote →</a></div>
+    </div>
+
+    <div class="product-full">
+      <div><div class="pf-index">02 / 02</div></div>
+      <div>
+        <h3>Duplex Boxes</h3>
+        <div class="tagline">Coated board · retail &amp; branding grade</div>
+        <p class="desc">Smooth, printable duplex board for products that need to look as good as they're protected. Ideal for retail cartons, cosmetics, food packaging, pharma and gift boxes that carry your brand on the shelf.</p>
+        <ul class="spec-list">
+          <li><span>Board type</span><span>Grey-back / White-back Duplex</span></li>
+          <li><span>Paper grade</span><span>250–450 GSM</span></li>
+          <li><span>Finish</span><span>Offset print, matte / gloss lamination</span></li>
+          <li><span>Fabrication</span><span>Die-cut, folder-gluer assembly</span></li>
+        </ul>
+        <div class="best">Best for: FMCG, retail, cosmetics, food, pharma, gifting</div>
+      </div>
+      <div class="pf-cta"><a class="btn btn-teal" target="_blank" href="https://wa.me/919843097090?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20Duplex%20Boxes.">Get Quote →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CUSTOM BOX BUILDER ================= -->
+<section id="builder" class="on-teal reveal">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow" style="color:var(--kraft);">Custom Size Tool</span>
+      <h2 style="color:var(--paper);">Design your box. See it before we build it.</h2>
+      <p class="ink-soft">Enter the length, width and height you need. We'll generate a proportional preview stamped with our logo. Download the image and send it to us with your enquiry.</p>
+    </div>
+    <div class="builder-grid">
+      <div class="builder-panel">
+        <div class="field"><label style="color:rgba(245,241,230,0.55);">Length (cm)</label><input type="number" id="bx-l" value="40" min="1" max="500"></div>
+        <div class="field"><label style="color:rgba(245,241,230,0.55);">Width (cm)</label><input type="number" id="bx-w" value="30" min="1" max="500"></div>
+        <div class="field"><label style="color:rgba(245,241,230,0.55);">Height (cm)</label><input type="number" id="bx-h" value="24" min="1" max="500"></div>
+        <div class="field">
+          <label style="color:rgba(245,241,230,0.55);">Board Type</label>
+          <select id="bx-type">
+            <option value="corrugated">Corrugated Board</option>
+            <option value="duplex">Duplex Board</option>
+          </select>
+        </div>
+        <p style="font-size:11.5px;color:rgba(245,241,230,0.45);margin:4px 0 18px;">Accepted range: 1–500 cm per side. Values scale proportionally in the preview.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <button class="btn btn-primary" id="bx-generate" style="border:none;cursor:pointer;">Generate Box Preview</button>
+          <button class="btn btn-outline" id="bx-download" style="cursor:pointer;" disabled>Download PNG</button>
+        </div>
+      </div>
+      <div class="builder-canvas-wrap">
+        <canvas id="bx-canvas" width="620" height="480"></canvas>
+        <p id="bx-caption" style="text-align:center;font-family:'JetBrains Mono',monospace;font-size:11.5px;color:rgba(245,241,230,0.55);margin-top:12px;">Enter dimensions and click Generate Box Preview.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INDUSTRIES ================= -->
+<section id="industries" class="on-paper2 reveal">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Industries We Serve</span>
+      <h2>Seafood and dry flowers first. Everything else, built from the same discipline.</h2>
+    </div>
+    <div class="flagship-grid">
+      <div class="flagship-card">
+        <div class="tag">Founding Specialization</div>
+        <h3>Seafood &amp; Frozen Export</h3>
+        <p>Moisture-resistant, high-strength cartons engineered for cold-chain handling and long-distance export transit.</p>
+      </div>
+      <div class="flagship-card alt">
+        <div class="tag">Core Specialization</div>
+        <h3>Dry Flowers</h3>
+        <p>Ventilated, freshness-preserving packaging that protects delicate dry flower shipments from crushing and moisture damage.</p>
+      </div>
+    </div>
+    <div class="industry-grid">
+      <div class="industry-card"><h4>FMCG &amp; Consumer Goods</h4><p>Shelf-ready, retail-friendly boxes for high-volume distribution.</p></div>
+      <div class="industry-card"><h4>Food &amp; Beverage</h4><p>Food-safe packaging suited for direct and indirect food contact.</p></div>
+      <div class="industry-card"><h4>Textiles &amp; Garments</h4><p>Protective packaging for folded or hanging garment shipments.</p></div>
+      <div class="industry-card"><h4>Pharmaceuticals</h4><p>Precision-fit cartons where contamination risk must stay near zero.</p></div>
+      <div class="industry-card"><h4>Chemicals / Edible Oils</h4><p>Reinforced configurations for safe stacking and transit.</p></div>
+      <div class="industry-card"><h4>E-commerce</h4><p>Right-sized, durable boxes built to survive courier handling.</p></div>
+    </div>
+    <div style="margin-top:26px;padding:18px 22px;border:1px solid var(--line);background:var(--cream-card);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;">
+      <p style="margin:0;font-size:14px;color:var(--ink-soft);">Don't see your industry? Talk to us about custom packaging.</p>
+      <a class="btn btn-dark-outline" href="#contact">Talk To Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CAPABILITIES + QUALITY ================= -->
+<section id="capabilities" class="on-teal reveal">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow" style="color:var(--kraft);">Capabilities &amp; Quality</span>
+      <h2 style="color:var(--paper);">Semi-automatic precision, checked at every stage.</h2>
+    </div>
+    <div class="cap-grid">
+      <div>
+        <h4 style="font-size:15px;color:var(--paper);margin-bottom:12px;">Process Flow</h4>
+        <ul class="flow-list">
+          <li><p>Requirement &amp; spec sharing — including moisture, ventilation, fragility needs.</p></li>
+          <li><p>Ply / GSM / design recommendation.</p></li>
+          <li><p>Sampling / prototyping, where requested.</p></li>
+          <li><p>Production with in-line quality checks.</p></li>
+          <li><p>Packing &amp; dispatch.</p></li>
+        </ul>
+        <div class="stat-strip cap-stats">
+          <div class="stat-box"><div class="num">600T</div><div class="lab">Annual Capacity</div></div>
+          <div class="stat-box"><div class="num">5 Days</div><div class="lab">Standard Dispatch</div></div>
+          <div class="stat-box"><div class="num">7 Days</div><div class="lab">Custom Dispatch</div></div>
+          <div class="stat-box"><div class="num">Pan-India</div><div class="lab">Logistics</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="seal"><div class="seal-inner">ISO Certified Manufacturer</div></div>
+        <h4 style="font-size:15px;color:var(--paper);margin-bottom:6px;">Quality Control</h4>
+        <ul class="qc-list">
+          <li>Incoming raw material inspection</li>
+          <li>In-process checks during corrugation, cutting &amp; printing</li>
+          <li>Pre-dispatch quality verification</li>
+        </ul>
+        <p style="color:rgba(245,241,230,0.78);font-size:13.5px;margin-top:14px;">Quality control carries particular weight for our seafood and dry flower lines, where moisture resistance and structural integrity directly affect product condition on arrival. We manufacture using recyclable kraft board and responsible sourcing practices.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="on-paper2 reveal">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Get In Touch</span>
+      <h2>Ready to discuss your packaging needs?</h2>
+      <p>Fill in the form and we'll open WhatsApp with your enquiry pre-filled. Or reach us directly below.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-col">
+        <div class="field"><label>Your Name</label><input type="text" id="cf-name" placeholder="Full name"></div>
+        <div class="field"><label>Phone</label><input type="tel" id="cf-phone" placeholder="+91"></div>
+        <div class="field"><label>Email</label><input type="email" id="cf-email" placeholder="you@company.com"></div>
+        <div class="field">
+          <label>Product Type</label>
+          <select id="cf-product">
+            <option>Corrugated Boxes</option>
+            <option>Duplex Boxes</option>
+          </select>
+        </div>
+        <div class="field"><label>Message</label><textarea id="cf-message" placeholder="Tell us about your product, quantity and shipping route"></textarea></div>
+        <button class="btn btn-primary" id="cf-submit" style="width:100%;justify-content:center;border:none;">Send Message</button>
+      </div>
+      <div class="contact-col dark">
+        <span class="eyebrow" style="color:var(--kraft);">Direct Contact</span>
+        <div class="contact-direct">
+          <div class="cd-row"><div class="lab">Phone</div><div class="val"><a href="tel:+919843097090">98430 97090</a> &nbsp;/&nbsp; <a href="tel:+919865152306">98651 52306</a></div></div>
+          <div class="cd-row"><div class="lab">Email</div><div class="val"><a href="mailto:sales@greenstarpackaging.in">sales@greenstarpackaging.in</a></div></div>
+          <div class="cd-row"><div class="lab">Address</div><div class="val" style="font-size:14px;line-height:1.5;">2/106, Venkatachalapuram,<br>Valasamuthram, Thoothukudi,<br>Tamil Nadu</div></div>
+          <div class="cd-row"><div class="lab">Response Time</div><div class="val" style="font-size:14.5px;">Within 24 Hours</div></div>
+        </div>
+        <div style="display:flex;gap:12px;margin-top:24px;flex-wrap:wrap;">
+          <a class="btn btn-primary" href="mailto:sales@greenstarpackaging.in">Email Us</a>
+          <a class="btn btn-outline" target="_blank" href="https://wa.me/919843097090">Enquire on WhatsApp</a>
+        </div>
+        <div class="map-embed">
+          <iframe loading="lazy" src="https://www.google.com/maps?q=Valasamuthram,Thoothukudi,Tamil+Nadu&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">Green<span>star</span></div>
+        <p style="margin-top:12px;max-width:250px;">ISO certified manufacturer of corrugated and duplex boxes in Thoothukudi, Tamil Nadu — specialized in seafood export and dry flower packaging.</p>
+      </div>
+      <div>
+        <h5>Quick Links</h5>
+        <a href="#home">Home</a><a href="#about">About</a><a href="#products">Products</a><a href="#builder">Custom Box</a><a href="#industries">Industries</a><a href="#capabilities">Capabilities</a><a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h5>Products</h5>
+        <a href="#products">Corrugated Boxes</a>
+        <a href="#products">Duplex Boxes</a>
+        <a href="#builder">Custom Sizes</a>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <a href="tel:+919843097090">98430 97090</a>
+        <a href="tel:+919865152306">98651 52306</a>
+        <a href="mailto:sales@greenstarpackaging.in">sales@greenstarpackaging.in</a>
+        <p>2/106, Venkatachalapuram, Valasamuthram, Thoothukudi, Tamil Nadu</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Greenstar Packaging Company. All rights reserved.</span>
+      <span>This page was designed and developed by <a href="#" target="_blank">TSKNEXUS</a></span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" target="_blank" href="https://wa.me/919843097090">💬 WhatsApp Us</a>
+
+<script>
+  // mobile nav
+  const navToggle = document.getElementById('navToggle');
+  const mobilePanel = document.getElementById('mobilePanel');
+  navToggle.addEventListener('click', () => mobilePanel.classList.toggle('open'));
+  mobilePanel.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobilePanel.classList.remove('open')));
+
+  // reveal on scroll
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  revealEls.forEach(el => io.observe(el));
+
+  // about video sound toggle
+  const aboutVideo = document.getElementById('about-video');
+  const soundToggle = document.getElementById('soundToggle');
+  soundToggle.addEventListener('click', () => {
+    aboutVideo.muted = !aboutVideo.muted;
+    if (!aboutVideo.muted) {
+      aboutVideo.play();
+      soundToggle.textContent = '🔊 Sound on — tap to mute';
+    } else {
+      soundToggle.textContent = '🔇 Turn on sound to hear our story';
+    }
+  });
+
+  // ---------- CUSTOM BOX BUILDER ----------
+  const bxCanvas = document.getElementById('bx-canvas');
+  const bxCtx = bxCanvas.getContext('2d');
+  const bxDownloadBtn = document.getElementById('bx-download');
+  const bxCaption = document.getElementById('bx-caption');
+
+  function isoPt(x, y, z, originX, originY, scale){
+    return {
+      x: originX + (x - y) * Math.cos(Math.PI/6) * scale,
+      y: originY + ((x + y) * Math.sin(Math.PI/6) - z) * scale
+    };
+  }
+
+  function withFaceTransform(ctx, p0, pu, pv, draw){
+    ctx.save();
+    ctx.setTransform(pu.x, pu.y, pv.x, pv.y, p0.x, p0.y);
+    draw(ctx);
+    ctx.restore();
+  }
+
+  function drawBoxPreview(L, W, H, boardType){
+    const cw = bxCanvas.width, ch = bxCanvas.height;
+    bxCtx.clearRect(0, 0, cw, ch);
+    bxCtx.fillStyle = '#153837';
+    bxCtx.fillRect(0, 0, cw, ch);
+    bxCtx.fillStyle = 'rgba(245,241,230,0.5)';
+    bxCtx.font = "600 10px 'JetBrains Mono', monospace";
+    bxCtx.textAlign = 'left';
+    bxCtx.fillText('GREENSTAR PACKAGING CO. — CUSTOM BOX PREVIEW', 20, 26);
+
+    const maxDim = Math.max(L, W, H);
+    const targetMax = 190;
+    const rawScale = targetMax / maxDim;
+    const dx = Math.max(L * rawScale, 26);
+    const dy = Math.max(W * rawScale, 26);
+    const dz = Math.max(H * rawScale, 22);
+
+    const originX = cw / 2;
+    const originY = ch / 2 + 70;
+    const scale = 1;
+
+    const V = {
+      fbl: isoPt(0, 0, 0, originX, originY, scale),
+      fbr: isoPt(dx, 0, 0, originX, originY, scale),
+      bbr: isoPt(dx, dy, 0, originX, originY, scale),
+      bbl: isoPt(0, dy, 0, originX, originY, scale),
+      ftl: isoPt(0, 0, dz, originX, originY, scale),
+      ftr: isoPt(dx, 0, dz, originX, originY, scale),
+      btr: isoPt(dx, dy, dz, originX, originY, scale),
+      btl: isoPt(0, dy, dz, originX, originY, scale),
+    };
+
+    const isDuplex = boardType === 'duplex';
+    const base = isDuplex ? [244, 240, 231] : [196, 154, 97];
+    const shade = (arr, f) => `rgb(${Math.round(arr[0]*f)},${Math.round(arr[1]*f)},${Math.round(arr[2]*f)})`;
+
+    function poly(points, fillStyle){
+      bxCtx.beginPath();
+      bxCtx.moveTo(points[0].x, points[0].y);
+      for(let i=1;i<points.length;i++) bxCtx.lineTo(points[i].x, points[i].y);
+      bxCtx.closePath();
+      bxCtx.fillStyle = fillStyle;
+      bxCtx.fill();
+      bxCtx.strokeStyle = 'rgba(33,29,23,0.35)';
+      bxCtx.lineWidth = 1.4;
+      bxCtx.stroke();
+    }
+
+    poly([V.ftl, V.ftr, V.btr, V.btl], shade(base, 1.12));
+    poly([V.fbl, V.bbl, V.btl, V.ftl], shade(base, 0.82));
+    poly([V.fbr, V.bbr, V.btr, V.ftr], shade(base, 0.62));
+
+    if(!isDuplex){
+      withFaceTransform(bxCtx, V.fbr, {x:V.bbr.x-V.fbr.x, y:V.bbr.y-V.fbr.y}, {x:V.ftr.x-V.fbr.x, y:V.ftr.y-V.fbr.y}, (ctx) => {
+        ctx.strokeStyle = 'rgba(33,29,23,0.14)';
+        ctx.lineWidth = 0.012;
+        for(let t=0.12; t<1; t+=0.14){
+          ctx.beginPath();
+          ctx.moveTo(0, t);
+          ctx.lineTo(1, t);
+          ctx.stroke();
+        }
+      });
+    }
+
+    withFaceTransform(bxCtx, V.fbr, {x:V.bbr.x-V.fbr.x, y:V.bbr.y-V.fbr.y}, {x:V.ftr.x-V.fbr.x, y:V.ftr.y-V.fbr.y}, (ctx) => {
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillStyle = isDuplex ? '#1F4B4A' : '#2A2419';
+      ctx.font = "700 0.15px 'Zilla Slab', serif";
+      ctx.fillText('GREENSTAR', 0.5, 0.42);
+      ctx.font = "600 0.05px 'JetBrains Mono', monospace";
+      ctx.fillStyle = isDuplex ? 'rgba(31,75,74,0.75)' : 'rgba(42,36,25,0.75)';
+      ctx.fillText('PACKAGING CO. · EST. 2014', 0.5, 0.54);
+      ctx.strokeStyle = ctx.fillStyle;
+      ctx.lineWidth = 0.004;
+      ctx.beginPath();
+      ctx.moveTo(0.28, 0.62);
+      ctx.lineTo(0.72, 0.62);
+      ctx.stroke();
+    });
+
+    bxCtx.textAlign = 'center';
+    bxCtx.fillStyle = '#F5F1E6';
+    bxCtx.font = "600 15px 'JetBrains Mono', monospace";
+    bxCtx.fillText(`${L} × ${W} × ${H} cm`, cw/2, ch - 42);
+    bxCtx.font = "500 11px 'JetBrains Mono', monospace";
+    bxCtx.fillStyle = 'rgba(245,241,230,0.55)';
+    bxCtx.fillText((isDuplex ? 'Duplex Board' : 'Corrugated Board') + ' · Preview Only', cw/2, ch - 22);
+  }
+
+  function clampDim(v){
+    v = parseFloat(v);
+    if(isNaN(v)) v = 1;
+    return Math.min(500, Math.max(1, v));
+  }
+
+  document.getElementById('bx-generate').addEventListener('click', () => {
+    const L = clampDim(document.getElementById('bx-l').value);
+    const W = clampDim(document.getElementById('bx-w').value);
+    const H = clampDim(document.getElementById('bx-h').value);
+    const type = document.getElementById('bx-type').value;
+    drawBoxPreview(L, W, H, type);
+    bxDownloadBtn.disabled = false;
+    bxCaption.textContent = `Preview generated — ${L} × ${W} × ${H} cm, ${type === 'duplex' ? 'Duplex' : 'Corrugated'} Board.`;
+  });
+
+  bxDownloadBtn.addEventListener('click', () => {
+    const link = document.createElement('a');
+    link.download = 'greenstar-custom-box-preview.png';
+    link.href = bxCanvas.toDataURL('image/png');
+    link.click();
+  });
+
+  window.addEventListener('load', () => {
+    drawBoxPreview(40, 30, 24, 'corrugated');
+  });
+
+  // contact form -> WhatsApp
+  document.getElementById('cf-submit').addEventListener('click', () => {
+    const name = document.getElementById('cf-name').value.trim();
+    const phone = document.getElementById('cf-phone').value.trim();
+    const email = document.getElementById('cf-email').value.trim();
+    const product = document.getElementById('cf-product').value;
+    const message = document.getElementById('cf-message').value.trim();
+    let text = `Hi, I'd like to enquire about packaging.%0A%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AEmail: ${encodeURIComponent(email)}%0AProduct Type: ${encodeURIComponent(product)}%0AMessage: ${encodeURIComponent(message)}`;
+    window.open(`https://wa.me/919843097090?text=${text}`, '_blank');
+  });
+</script>
+
+</body>
+</html>
